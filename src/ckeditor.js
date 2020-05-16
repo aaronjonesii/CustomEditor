@@ -33,7 +33,6 @@ import Title from '@ckeditor/ckeditor5-heading/src/title';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 
 import '../theme/theme.css';
-import '../theme/custom.css';
 
 export default class BalloonEditor extends BalloonEditorBase {}
 
@@ -100,7 +99,7 @@ BalloonEditor.defaultConfig = {
 		options: [
 			{ model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
 			{ model: 'subtitle',
-				view: { name: 'h2', classes: 'subtitle' },
+				view: { name: 'span', classes: 'ck-subtitle' },
 				title: 'Subtitle',
 				class: 'ck-heading_heading2_subtitle',
 				// It needs to be converted before the standard 'heading2'.
